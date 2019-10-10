@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" content="width=device-width" initial-scale="1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <title>Test Product App</title>
+</head>
+<body>
+    
+    <div class="nav_bar"></div>
+
+    <div id="app">
+        <div class="product">
+            <div class="product-img">
+                <img v-bind:src="image" alt="pan">
+            </div>
+            
+            <div class="product-info">
+                <h1>{{ product }}</h1>
+                <p> {{ description }} </p>
+                <p v-if="inventory > 10">In Stock</p>
+                <p v-else-if="inventory <= 10 && inventory > 0">We're almost out</p>
+                <p v-else>Out of Stocl</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
