@@ -1,0 +1,11 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Mansalva', cursive;
+}
+
+.nav_bar{
+    height: 10vh;
+    width: 100vw;
+    background-image: radial-gradient(#2980b9, #34495e);
+}
