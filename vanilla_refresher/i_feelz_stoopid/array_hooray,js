@@ -1,0 +1,6 @@
+//Bill Totals
+var bill = [124, 48, 268]; 
+billA = bill[0] + (bill[0]*.15 ); 
+billB = bill[1] + (bill[1]*.2); 
+billC = bill[2] + (bill[2]*.1); 
+console.log(billA, billB, billC); 
